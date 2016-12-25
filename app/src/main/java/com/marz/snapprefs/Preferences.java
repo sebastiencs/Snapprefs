@@ -286,30 +286,34 @@ public class Preferences {
     public static int getLicenceUsingID(String deviceId) {
         String confirmationId = getString(Prefs.CONFIRMATION_ID);
 
-        if (confirmationId.equals(Prefs.CONFIRMATION_ID.defaultVal))
-            return 0;
+	return 2;
 
-        String storedDeviceId = getString(Prefs.DEVICE_ID);
+        // if (confirmationId.equals(Prefs.CONFIRMATION_ID.defaultVal))
+        //     return 0;
 
-        if (storedDeviceId == null || storedDeviceId.equals(Prefs.DEVICE_ID.defaultVal) ||
-                !storedDeviceId.equals(deviceId))
-            return 0;
+        // String storedDeviceId = getString(Prefs.DEVICE_ID);
 
-        return (int) getPref(storedDeviceId, Prefs.LICENCE.defaultVal);
+        // if (storedDeviceId == null || storedDeviceId.equals(Prefs.DEVICE_ID.defaultVal) ||
+        //         !storedDeviceId.equals(deviceId))
+        //     return 0;
+
+        // return (int) getPref(storedDeviceId, Prefs.LICENCE.defaultVal);
     }
 
     public static int getLicence() {
         String confirmationId = getString(Prefs.CONFIRMATION_ID);
 
-        if (confirmationId.equals(Prefs.CONFIRMATION_ID.defaultVal))
-            return 0;
+	return 2;
 
-        String storedDeviceId = getString(Prefs.DEVICE_ID);
+        // if (confirmationId.equals(Prefs.CONFIRMATION_ID.defaultVal))
+        //     return 0;
 
-        if (storedDeviceId == null || storedDeviceId.equals(Prefs.DEVICE_ID.defaultVal))
-            return 0;
+        // String storedDeviceId = getString(Prefs.DEVICE_ID);
 
-        return (int) getPref(storedDeviceId, Prefs.LICENCE.defaultVal);
+        // if (storedDeviceId == null || storedDeviceId.equals(Prefs.DEVICE_ID.defaultVal))
+        //     return 0;
+
+        // return (int) getPref(storedDeviceId, Prefs.LICENCE.defaultVal);
     }
 
     private static String assignDefaultSavePath() {
